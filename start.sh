@@ -2,7 +2,7 @@
 
 # .bashrc custom prompt
 # PS1="\[\033[0;33m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;33m\]\342\234\227\[\033[0;33m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;33m\]root\[\033[01;33m\]@\[\033[01;33m\]\h'; else echo -e '\[\033[1;92m\]\u\[\033[01;33m\]\U1f4a3\[\033[01;97m\]\h'; fi)\[\033[0;33m\]]\342\224\200[\[\033[0;32m\]\w\[\033[0;33m\]]\n\[\033[0;33m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]\[\e[1;36m\]\\$ \[\e[0m\]"
-# PS1="\[\033[0;33m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;33m\]\342\234\227\[\033[0;33m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;33m\]root\[\033[01;33m\]@\[\033[01;33m\]\h'; else echo -e '\[\033[1;92m\]\u\[\033[5;33m\]\U1f4a3'; fi)\[\033[0;33m\]]\342\224\200[\[\033[0;36m\]\w\[\033[0;33m\]]\n\[\033[0;33m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]\[\e[1;36m\]\\$ \[\e[0m\]"
+#PS1="\[\033[0;33m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;33m\]\342\234\227\[\033[0;33m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;33m\]root\[\033[01;33m\]@\[\033[01;33m\]\h'; else echo -e '\[\033[1;92m\]\u\[\033[6;33m\]\U1f525'; fi)\[\033[0;33m\]]\342\224\200[\[\033[1;35m\]\w\[\033[0;33m\]]\n\[\033[0;33m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]\[\e[1;36m\]\\$ \[\e[0m\]"
 
 # Update & Upgrade
 sudo apt -y update dist-upgrade
@@ -19,6 +19,8 @@ sudo apt -y install virtualbox qemu qemu-system-arm qemu-system-mips docker
 
 # Pwn Environment Installations
 sudo apt -y install gdb gdbserver gcc-multilib ltrace strace valgrind gcc-multilib
+wget -O ~/.gdbinit-gef.py -q https://github.com/hugsy/gef/raw/master/gef.py
+echo source ~/.gdbinit-gef.py >> ~/.gdbinit
 
 sudo wget 'https://bootstrap.pypa.io/pip/2.7/get-pip.py' && sudo python2 get-pip.py
 sudo apt-get -y install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential
