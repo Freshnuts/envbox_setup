@@ -39,6 +39,7 @@ sudo apt -y install gnuradio gqrx-sdr
 
 # Removals
 sudo apt -y remove mintupdate
+sudo apt -y remove mintinstall
 
 # Fix Popping sound issue @ /etc/pulse/default.pa
 sudo sed -i "s/load-module module-suspend-on-idle/#load-module module-suspend-on-idle/g" /etc/pulse/default.pa
