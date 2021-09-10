@@ -22,6 +22,7 @@ sudo apt -y install virtualbox qemu qemu-system-arm qemu-system-mips docker
 sudo apt -y install gdb gdbserver gcc-multilib ltrace strace valgrind gcc-multilib
 wget -O ~/.gdbinit-gef.py -q https://github.com/hugsy/gef/raw/master/gef.py
 echo source ~/.gdbinit-gef.py >> ~/.gdbinit
+sudo apt -y install openjdk-11-jdk
 
 sudo wget 'https://bootstrap.pypa.io/pip/2.7/get-pip.py' && sudo python2 get-pip.py
 sudo apt-get -y install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential
