@@ -40,6 +40,9 @@ sudo apt -y install vim vim-youcompleteme
 # Misc Installations
 sudo apt -y install hddtemp hwinfo vlc evince eog tmux
 
+# Discord dependencies
+sudo apt install libgconf-2-4 libappindicator1 libc++1
+
 # RF Software
 sudo apt -y install gnuradio gqrx-sdr
 
