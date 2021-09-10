@@ -38,7 +38,7 @@ sudo apt -y install clamav openvas
 sudo apt -y install vim vim-youcompleteme
 
 # Misc Installations
-sudo apt -y install hddtemp hwinfo vlc evince eog
+sudo apt -y install hddtemp hwinfo vlc evince eog tmux
 
 # RF Software
 sudo apt -y install gnuradio gqrx-sdr
