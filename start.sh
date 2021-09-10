@@ -19,7 +19,7 @@ sudo apt install -y python2 python3 python3-dev python3-pip
 sudo apt -y install virtualbox qemu qemu-system-arm qemu-system-mips docker
 
 # Pwn Environment Installations
-sudo apt -y install gdb gdbserver gcc-multilib ltrace strace valgrind
+sudo apt -y install gdb gdbserver gcc-multilib ltrace strace valgrind radare2
 wget -O ~/.gdbinit-gef.py -q https://github.com/hugsy/gef/raw/master/gef.py
 echo source ~/.gdbinit-gef.py >> ~/.gdbinit
 sudo apt -y install openjdk-11-jdk
