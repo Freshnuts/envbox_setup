@@ -5,12 +5,24 @@
 # PS1="\[\033[0;33m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;33m\]\342\234\227\[\033[0;33m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;33m\]root\[\033[01;33m\]@\[\033[01;33m\]\h'; else echo -e '\[\033[1;92m\]\u\[\033[01;33m\]\U1f4a3\[\033[01;97m\]\h'; fi)\[\033[0;33m\]]\342\224\200[\[\033[0;32m\]\w\[\033[0;33m\]]\n\[\033[0;33m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]\[\e[1;36m\]\\$ \[\e[0m\]"
 # PS1="\[\033[0;33m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;33m\]\342\234\227\[\033[0;33m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;33m\]root\[\033[01;33m\]@\[\033[01;33m\]\h'; else echo -e '\[\033[1;92m\]\u\[\033[6;33m\]\U1f525'; fi)\[\033[0;33m\]]\342\224\200[\[\033[1;35m\]\w\[\033[0;33m\]]\n\[\033[0;33m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]\[\e[1;36m\]\\$ \[\e[0m\]"
 
+
+# /etc/network/interfaces - interface timeout adjustment
+sudo sed -i s/timeout\ 300/timeout\ 5/g /etc/dhcp/dhcpclient.conf
+
 # Update & Upgrade
 sudo apt -y update dist-upgrade
 
 # NVIDIA drivers
-nvidia-detector
-sudo apt -y install nvidia-driver-470
+nvidia=nvidia-detector
+nvidia2=$(nvidia-detector)
+
+if $nvidia
+then
+        sudo apt install $nvidia2
+else
+        echo 'nvidia-detector: failed.'
+        
+fi
 
 # Python Installation
 sudo apt install -y python2 python3 python3-dev python3-pip
