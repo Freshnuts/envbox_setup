@@ -18,7 +18,7 @@ nvidia2=$(nvidia-detector)
 
 if $nvidia
 then
-        sudo apt install $nvidia2
+        sudo apt -y install $nvidia2
 else
         echo 'nvidia-detector: failed.'
         
