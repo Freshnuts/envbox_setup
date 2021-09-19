@@ -1,2 +1,2 @@
 # envbox_setup
-Setup box with user environment
+Setup pwn box
