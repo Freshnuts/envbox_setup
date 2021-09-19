@@ -1,2 +1,2 @@
 # envbox_setup
-Setup pwn box
+PWN box setup
