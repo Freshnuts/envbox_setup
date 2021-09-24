@@ -3,8 +3,17 @@
 # Bluetooth - my earbuds
 # coproc allows input to another process and can relays output.
 
-echo -e "\nBluetooth Earbuds\n"
-echo -e "1: Connect\n2: Disconnect"
+bluetooth_device=$1
+
+
+if [ $# != 1 ]
+then
+	echo -e 'Usage: blue <device name>\n'
+	exit
+fi
+
+echo -e "\nBluetooth Earbuds."
+echo -e "\n1: Connect\n2: Disconnect"
 
 read answer
 
@@ -15,19 +24,20 @@ then
 	sleep 3
 	echo -e 'exit\n' >&${COPROC[1]}
 
+	# For Debugging:
 	# output=$(cat <&${COPROC[0]})
 	# echo $output
 
-	tozo=$(bluetoothctl devices | grep -i 'tozo-t6' | cut -d' ' -f2)
-	bluetoothctl pair $tozo
-	bluetoothctl connect $tozo
+	
+	bt_search=$(bluetoothctl devices | grep -i "$1" | cut -d' ' -f2)
+	bluetoothctl pair $bt_search
+	bluetoothctl connect $bt_search
 
 elif [ $answer == 2 ]
 then
-	tozo=$(bluetoothctl devices | grep -i 'tozo-t6' | cut -d' ' -f2)
-	bluetoothctl remove $tozo
+	$bt_search	
+	bluetoothctl remove $bt_search
 
 else
 	echo -e 'Error\n'
 fi
-
