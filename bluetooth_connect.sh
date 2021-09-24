@@ -3,7 +3,7 @@
 # Bluetooth - my earbuds
 # coproc allows input to another process and can relays output.
 
-echo -e "\n1: Connect or 2: Disconnect"
+echo -e "\n1: Connect\n2: Disconnect"
 
 read answer
 
