@@ -1,10 +1,8 @@
 #!/bin/bash
-
 # Bluetooth - my earbuds
 # coproc allows input to another process and can relays output.
 
 bluetooth_device=$1
-
 
 if [ $# != 1 ]
 then
