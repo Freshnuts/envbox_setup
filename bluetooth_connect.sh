@@ -5,7 +5,6 @@
 
 bluetooth_device=$1
 
-
 if [ $# != 1 ]
 then
 	echo
@@ -21,10 +20,6 @@ read answer
 
 if [ $answer == 1 ]
 then
-
-
-
-
 	coproc bluetoothctl
 	echo -e '\nPairing:...'
 	echo -e 'scan on\n'  >&${COPROC[1]}
@@ -43,10 +38,10 @@ elif [ $answer == 2 ]
 then
 	bt_search=$(bluetoothctl devices | grep -i "$1" | cut -d' ' -f2)
 	bluetoothctl remove $bt_search
+	
 elif [ $answer == 3 ]
 then
 	exit
-
 else
 	echo -e 'Error\n'
 fi
