@@ -51,7 +51,7 @@ sudo apt -y install clamav openvas
 sudo apt -y install vim vim-youcompleteme
 
 # Misc Installations
-sudo apt -y install hddtemp hwinfo vlc evince eog tmux
+sudo apt -y install hddtemp hwinfo vlc evince eog tmux autopsy
 
 # Discord dependencies
 sudo apt -y install libgconf-2-4 libappindicator1 libc++1
