@@ -53,7 +53,7 @@ sudo apt -y install vim vim-youcompleteme
 # Misc Installations
 sudo apt -y install hddtemp hwinfo vlc evince eog tmux
 
-# Forensic Tools
+# Forensic Tools - procdot, exiftool
 sudo apt -y install scalpel foremost testdisk autopsy
 
 # Discord dependencies
