@@ -53,10 +53,13 @@ sudo apt -y install vim vim-youcompleteme
 # Misc Installations
 sudo apt -y install hddtemp hwinfo vlc evince eog tmux
 
-# Forensic Tools - procdot, exiftool
+# Forensic
 sudo apt -y install scalpel foremost testdisk autopsy
 
-# Discord dependencies
+# Networking
+sudo apt install nmap massscan wireshark tcpdump iptables 
+
+# Discord
 sudo apt -y install libgconf-2-4 libappindicator1 libc++1
 
 # RF Software
