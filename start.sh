@@ -65,6 +65,9 @@ sudo apt -y install libgconf-2-4 libappindicator1 libc++1
 # RF Software
 sudo apt -y install gnuradio gqrx-sdr
 
+# Android software
+sudo apt install jmtpfs adb
+
 # Removals
 sudo apt -y remove mintupdate
 sudo apt -y remove mintinstall
