@@ -57,7 +57,7 @@ sudo apt -y install hddtemp hwinfo vlc evince eog tmux
 sudo apt -y install scalpel foremost testdisk autopsy
 
 # Networking
-sudo apt install nmap massscan wireshark tcpdump iptables 
+sudo apt install nmap massscan wireshark tcpdump iptables snort ufw
 
 # Discord
 sudo apt -y install libgconf-2-4 libappindicator1 libc++1
