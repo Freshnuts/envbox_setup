@@ -58,6 +58,8 @@ sudo apt -y install scalpel foremost testdisk autopsy
 
 # Networking
 sudo apt install nmap massscan wireshark tcpdump iptables snort ufw
+sudo git clone 'https://github.com/rbsec/dnscan.git' /opt
+sudo git clone 'https://github.com/lanmaster53/recon-ng.git' /opt
 
 # Discord
 sudo apt -y install libgconf-2-4 libappindicator1 libc++1
