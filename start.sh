@@ -25,7 +25,7 @@ else
 fi
 
 # Python Installation
-sudo apt install -y python2 python3 python3-dev python3-pip
+sudo apt -y install python2 python3 python3-dev python3-pip
 
 # Virtual Environments Installations
 sudo apt -y install virtualbox qemu qemu-system-arm qemu-system-mips docker
