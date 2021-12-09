@@ -31,7 +31,8 @@ sudo apt -y install python2 python3 python3-dev python3-pip
 sudo apt -y install virtualbox qemu qemu-system-arm qemu-system-mips docker
 
 # Pwn Environment Installations
-sudo apt -y install gdb gdbserver gcc-multilib ltrace strace valgrind radare2 afl++ openjdk-11-jdk
+sudo apt -y install gdb gdbserver gcc-multilib ltrace strace valgrind radare2 afl++ openjdk-11-jdk gem
+sudo gem install one_gadget
 wget -O ~/.gdbinit-gef.py -q https://github.com/hugsy/gef/raw/master/gef.py
 echo source ~/.gdbinit-gef.py >> ~/.gdbinit
 
@@ -41,7 +42,6 @@ sudo python3 -m pip install --upgrade pip
 sudo python3 -m pip install --upgrade pwntools
 sudo apt-get -y install python python-dev git libssl-dev libffi-dev build-essential
 sudo python2 -m pip install --upgrade pwntools
-sudo gem install one_gadget
 
 # AV & Security Installations
 sudo apt -y install clamav openvas
