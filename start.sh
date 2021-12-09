@@ -36,6 +36,7 @@ sudo gem install one_gadget
 wget -O ~/.gdbinit-gef.py -q https://github.com/hugsy/gef/raw/master/gef.py
 echo source ~/.gdbinit-gef.py >> ~/.gdbinit
 
+# Pwntools
 sudo wget 'https://bootstrap.pypa.io/pip/2.7/get-pip.py' && sudo python2 get-pip.py
 sudo apt-get -y install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential
 sudo python3 -m pip install --upgrade pip
@@ -73,5 +74,6 @@ sudo apt install jmtpfs adb
 sudo apt -y remove mintupdate
 sudo apt -y remove mintinstall
 
+echo "Finished."
 exit
 
