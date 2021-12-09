@@ -57,7 +57,7 @@ sudo apt -y install hddtemp hwinfo vlc evince eog tmux
 sudo apt -y install scalpel foremost testdisk autopsy
 
 # Networking
-sudo apt install nmap masscan wireshark tcpdump iptables snort ufw screen
+sudo apt -y install nmap masscan wireshark tcpdump iptables snort ufw screen
 sudo git clone 'https://github.com/rbsec/dnscan.git' /opt
 sudo git clone 'https://github.com/lanmaster53/recon-ng.git' /opt
 
