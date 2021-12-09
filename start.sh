@@ -74,6 +74,8 @@ sudo apt -y install jmtpfs adb
 sudo apt -y remove mintupdate
 sudo apt -y remove mintinstall
 
-echo "Finished."
+echo
+echo
+echo 'Pwnbox Environment Finished.'
 exit
 
