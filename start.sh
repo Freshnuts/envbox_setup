@@ -4,7 +4,7 @@
 # PS1="\[\033[0;33m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[5;31m\]\360\237\222\200\033[1;31m\]dead\360\237\222\200\[\033[0;33m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;33m\]root\[\033[01;33m\]@\[\033[01;33m\]\h'; else echo -e '\[\033[1;92m\]\u\[\033[1;33m\]\U1f525'; fi)\[\033[0;33m\]]\342\224\200[\[\033[1;35m\]\w\[\033[0;33m\]]\n\[\033[0;33m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]\[\e[1;36m\]\360\237\222\243 \[\e[0m\]"
 
 # /etc/network/interfaces - timeout config
-sudo sed -i s/timeout\ 300/timeout\ 5/g /etc/dhcp/dhclient.conf
+sudo sed -i s/timeout\ 300/timeout\ 10/g /etc/dhcp/dhclient.conf
 
 # Fix sound issue @ /etc/pulse/default.pa
 sudo sed -i "s/load-module module-suspend-on-idle/#load-module module-suspend-on-idle/g" /etc/pulse/default.pa
