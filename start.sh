@@ -47,6 +47,9 @@ sudo python2 -m pip install --upgrade pwntools
 # AV & Security Installations
 sudo apt -y install clamav openvas
 
+# LAMP
+sudo apt -y install apache2 libapache2-mod-php mysql-server php7.4-common
+
 # IDE
 sudo apt -y install vim vim-youcompleteme
 
