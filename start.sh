@@ -51,7 +51,7 @@ sudo apt -y install clamav openvas
 sudo apt -y install apache2 libapache2-mod-php mysql-server php7.4-common
 
 # IDE
-sudo apt -y install vim vim-youcompleteme
+sudo apt -y install vim vim-youcompleteme sublime-text
 
 # Misc Installations
 sudo apt -y install hddtemp hwinfo vlc evince eog tmux
