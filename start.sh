@@ -33,6 +33,7 @@ sudo apt -y install virtualbox qemu qemu-system-arm qemu-system-mips docker
 # Pwn Environment Installations
 sudo apt -y install gdb gdbserver gcc-multilib ltrace strace valgrind radare2 afl++ openjdk-11-jdk gem
 sudo gem install one_gadget
+sudo gem install pedump
 wget -O ~/.gdbinit-gef.py -q https://github.com/hugsy/gef/raw/master/gef.py
 echo source ~/.gdbinit-gef.py >> ~/.gdbinit
 
