@@ -68,8 +68,8 @@ sudo git clone 'https://github.com/lanmaster53/recon-ng.git' /opt
 # Discord
 sudo apt -y install libgconf-2-4 libappindicator1 libc++1
 
-# RF Software
-sudo apt -y install gnuradio gqrx-sdr
+# Wifi & RF Software
+sudo apt -y install gnuradio gqrx-sdr aircrack-ng
 
 # Android software
 sudo apt -y install jmtpfs adb
