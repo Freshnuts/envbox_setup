@@ -45,6 +45,11 @@ sudo python3 -m pip install --upgrade pwntools
 sudo apt-get -y install python python-dev git libssl-dev libffi-dev build-essential
 sudo python2 -m pip install --upgrade pwntools
 
+# Pentest
+pip3 install -U pacu
+sudo apt-y  install metasploit-framework
+
+
 # AV & Security Installations
 sudo apt -y install clamav openvas
 
