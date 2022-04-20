@@ -63,7 +63,7 @@ sudo apt -y install vim vim-youcompleteme sublime-text
 sudo apt -y install hddtemp hwinfo vlc evince eog tmux
 
 # Forensic
-sudo apt -y install scalpel foremost testdisk autopsy
+sudo apt -y install scalpel foremost testdisk autopsy smartmontools
 
 # Networking
 sudo apt -y install nmap masscan wireshark tcpdump iptables snort ufw screen hping3 ifenslave
