@@ -83,7 +83,7 @@ sudo apt -y install jmtpfs adb
 sudo apt -y install hydra
 
 # Web
-sudo apt -y install dirb
+sudo apt -y install dirb postgresql
 
 # Removals
 sudo apt -y remove mintupdate
