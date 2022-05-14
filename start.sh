@@ -79,6 +79,9 @@ sudo apt -y install gnuradio gqrx-sdr aircrack-ng
 # Android software
 sudo apt -y install jmtpfs adb
 
+# Cracking
+sudo apt -y install hydra
+
 # Removals
 sudo apt -y remove mintupdate
 sudo apt -y remove mintinstall
