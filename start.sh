@@ -82,6 +82,9 @@ sudo apt -y install jmtpfs adb
 # Cracking
 sudo apt -y install hydra
 
+# Web
+sudo apt -y install dirb
+
 # Removals
 sudo apt -y remove mintupdate
 sudo apt -y remove mintinstall
