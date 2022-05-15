@@ -47,7 +47,7 @@ sudo python2 -m pip install --upgrade pwntools
 
 # Pentest
 pip3 install -U pacu
-sudo apt-y  install metasploit-framework
+sudo apt-y  install metasploit-framework nikto
 
 
 # AV & Security Installations
